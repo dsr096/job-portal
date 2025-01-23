@@ -1,24 +1,41 @@
-import { assets } from '../assets/assets'
-
 const AppDownload = () => {
     return (
-        <div className='container px-4 2xl:px-20 mx-auto my-20'>
-            <div className='relative bg-gradient-to-r from-violet-50 to-purple-50 p-12 sm:p-24 lg:p-32 rounded-lg'>
-                <div>
-                    <h1 className='text-2xl sm:text-4xl font-bold mb-8 max-w-md'>Download Mobile App For Better Experience</h1>
-                    <div className='flex gap-4'>
-                        <a href="#" className='inline-block'>
-                            <img className='h-12' src={assets.play_store} alt="" />
-                        </a>
-                        <a href="#" className='inline-block'>
-                            <img className='h-12' src={assets.app_store} alt="" />
-                        </a>
+        <section className="container mx-auto px-6 md:px-16 my-20">
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-100 p-10 md:p-20 rounded-lg shadow-md text-center lg:text-left">
+                {/* Text Section */}
+                <div className="mb-8">
+                    <h2 className="text-4xl font-extrabold text-gray-800 mb-4">
+                        Why Choose Our Job Portal?
+                    </h2>
+                    <p className="text-gray-700 text-lg md:text-xl">
+                        Discover top-notch job opportunities, connect with leading companies, and accelerate your career journey with our seamless platform.
+                    </p>
+                </div>
+
+                {/* Features */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="p-6 bg-white rounded-lg shadow-md">
+                        <h3 className="text-xl font-bold mb-2">Verified Jobs</h3>
+                        <p className="text-gray-600">
+                            Every listing is verified to ensure authenticity and trustworthiness for candidates.
+                        </p>
+                    </div>
+                    <div className="p-6 bg-white rounded-lg shadow-md">
+                        <h3 className="text-xl font-bold mb-2">Networking Opportunities</h3>
+                        <p className="text-gray-600">
+                            Connect with industry professionals and expand your network to discover new career prospects.
+                        </p>
+                    </div>
+                    <div className="p-6 bg-white rounded-lg shadow-md">
+                        <h3 className="text-xl font-bold mb-2">24/7 Support</h3>
+                        <p className="text-gray-600">
+                            Our support team is always available to help you with any queries or issues.
+                        </p>
                     </div>
                 </div>
-                <img className='absolute w-80 right-0 bottom-0 mr-32 max-lg:hidden' src={assets.app_main_img} alt="" />
             </div>
-        </div>
-    )
-}
+        </section>
+    );
+};
 
-export default AppDownload
+export default AppDownload;
